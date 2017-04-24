@@ -12,11 +12,11 @@ while answer == 'y'
 
   total = calculate(number_1, number_2, operator)
 
-if total.nil?
-  puts "Error"
-else
-  puts "the result is #{total}"
-end
+  if total.nil?
+    puts "Error"
+  else
+    puts "the result is #{total}"
+  end
 
 puts "Do you want to continue?"
 answer = gets.chomp
